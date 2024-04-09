@@ -5,9 +5,9 @@ playTime: 300,
     
     updatePlayTime(hours) {
         for (const key in profile) {
-            const totalHours = this.playTime + hours;
-            this.playTime = totalHours;
-            break;}   
+            this.playTime += hours;
+            break;
+}   
     },
     getInfo() { return `${this.username} has ${this.playTime} active hours!`; },
     };
